@@ -12,18 +12,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
-    margin: 20px;
-    padding: 20px;
-}
-
-.header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-content: center;
+    margin: auto;
+    width: 1350px;
 }
 
 .logo{
@@ -31,17 +22,21 @@
     position: absolute;
 }
 
-
 .header h1{
     color: rgb(29, 29, 117);
     font-family: sans-serif;
     font-size: 72px;
     font-weight: 500;
-    background-color:  rgb(29, 29, 117);
+    background-color:  rgb(0, 61, 165);
     color: white;
-    width: 100%;
-    padding: 60px;
+    height: 150px;
+    padding: 30px;
     text-align: center;
+}
+
+.header .titulo img{
+    height: 150px;
+    width: auto;
 }
 
 .nav{
@@ -70,13 +65,6 @@
     font-weight: 400;
     color: rgb(29, 29, 117);
     text-decoration: none;
-}
-
-.main .principal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
 }
 
 .main h1{
@@ -123,7 +111,7 @@
 .video .video-text{
     width: 480px;
     color: rgb(29, 29, 117);
-    padding: 20px;
+    padding: 10px 50px;
 }
 
 #redes{
@@ -144,7 +132,7 @@
 }
 
 .footer{
-    background-color: black;
+    background-color:  rgb(0, 61, 165);
     color: white;
     text-align: center;
     font-family: sans-serif;
@@ -155,22 +143,15 @@
 }
 
 /* CAMPUS */
-#campus #logo{
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
+.campus{
+    width: 1350px;
 }
 
-#campus .main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-#campus .main img{
-    width: 210vh;
+.campus .main img{
+    width: 1350px;
 }
 
-#campus .main p{
+.campus .main p{
     font-weight: 400;
     font-family: sans-serif;
     font-size: 24px;
@@ -179,44 +160,51 @@
     color: rgb(29, 29, 117);
 }
 
-#campus .actividades p{
-    font-size: 32px;
+.campus .actividades p{
+    font-size: 28px;
 }
 
-#campus .redes{
+.campus .actividades .accordion-button{
+    font-weight: 500;
+    font-size: 28px;
+    padding: 30px;
+}
+
+.campus .actividades .accordion-body{
+    font-weight: 400;
+    font-size: 28px;
+    padding: 30px;
+}
+
+.campus .actividades .accordion-body img{
+    padding: 30px;
+}
+
+.campus .redes{
     text-align: center;
 }
 
-#campus #redes{
+.campus .redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#campus #redes img{
+.campus .redes img{
     width: auto;
     height: 60%;  
 }
 
-
 /* FACULTADES */
-#facultades #logo{
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
+.facultades{
+    width: 1350px;
 }
 
-#facultades .main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.facultades .main img{
+    width: 1350px;
 }
 
-#facultades .main img{
-    width: 212vh;
-}
-
-#facultades .casas{
+.facultades .casas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -227,11 +215,12 @@
     justify-content: space-between; 
     justify-content: space-around;
 }
-#facultades .becas h1{
+
+.facultades .becas h1{
     padding-left: 30px;
 }
 
-#facultades .video{
+.facultades .video{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -241,49 +230,37 @@
     justify-content: space-between;
 }
 
-#facultades .video .video-text{
+.facultades .video .video-text{
     width: 90vh;
     background-color: white;
     color: black;
 }
 
-#facultades .redes{
+.facultades .redes{
     text-align: center;
 }
 
-#facultades #redes{
+.facultades #redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#facultades #redes img{
+.facultades #redes img{
     width: auto;
     height: 60%;  
 }
 
 /* INSTITUCIONAL */
-#institucional #logo{
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
+.institucional{
+    width: 1350px;
 }
 
-#institucional .main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.institucional .main img{
+    width: 1350px; 
 }
 
-#institucional .main img{
-    width: 208vh; 
-}
-
-#institucional .main p{
+.institucional .main p{
     font-weight: 300;
     font-family: sans-serif;
     font-size: 26px;
@@ -293,62 +270,64 @@
     color: white;
 }
 
-
-
-#institucional .main .eventos h1{
+.institucional .main .eventos h1{
     text-align: center;     
     color: rgb(29, 29, 117);
     font-family: sans-serif;
     font-size: 42px;
 }
 
-#institucional .main .eventos .tipos-eventos{
+.institucional .main .eventos .tipos-eventos{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;    
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     justify-content: space-between;
     justify-content: space-around;
 }
 
-#institucional .form{
+.institucional .form{
     font-size: 20px;
 }
 
-#institucional .redes{
+.institucional .redes{
     text-align: center;
 }
 
-#institucional #redes{
+.institucional .redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#institucional #redes img{
+.institucional .redes img{
     max-height: 60%;
     width: auto; 
 }
 
 /* POSGRADOS */
-#posgrados logo{
+.posgrados{
+    width: 1350px;
+}
+
+.posgrados logo{
     display: flex;
     flex-wrap: wrap;
     height: 30vh;
 }
 
-#posgrados .main{
+.posgrados .main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-#posgrados .main img{
-    width: 210vh;
+.posgrados .main img{
+    width: 1350px;
 }
 
-#posgrados .main p{
+.posgrados .main p{
     font-weight: 400;
     font-family: sans-serif;
     font-size: 24px;
@@ -356,37 +335,37 @@
     padding-bottom: 20px;
 }
 
-#posgrados .superior{
+.posgrados .superior{
     color: rgb(29, 29, 117);
     display: inline-block;
 }
 
-#posgrados .superior p{
+.posgrados .superior p{
     font-size: 32px;
 }
 
-#posgrados .main .reconocimiento{
+.posgrados .main .reconocimiento{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#posgrados .main .reconocimiento img{
+.posgrados .main .reconocimiento img{
     width: 62vw;
 }
 
-#posgrados .main .reconocimiento p{
+.posgrados .main .reconocimiento p{
     width: 28vw;
     background-color: black;
     color: white;
     padding: 20px;
 }
 
-#posgrados .numeros0{
+.posgrados .numeros0{
     text-align: center;
 }
 
-#posgrados .numeros1{
+.posgrados .numeros1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -398,22 +377,22 @@
     color: rgb(79, 126, 214);
 }
 
-#posgrados .numeros1 .p1{
+.posgrados .numeros1 .p1{
     font-size: 40px;
     font-weight: 500;
 }
 
-#posgrados .numeros1 .p2{
+.posgrados .numeros1 .p2{
     font-size: 40px;
     font-weight: 500;
 }
 
-#posgrados .numeros1 .p3{
+.posgrados .numeros1 .p3{
     font-size: 40px;
     font-weight: 500;
 }
 
-#posgrados .numeros2{
+.posgrados .numeros2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -423,17 +402,14 @@
     padding-bottom: 20px;
 }
 
-#posgrados .redes{
+.posgrados .redes{
     text-align: center;
-}
-
-#posgrados #redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#posgrados #redes img{
+.posgrados #redes img{
     width: auto;
     height: 60%;  
 }

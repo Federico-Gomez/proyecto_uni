@@ -7,15 +7,13 @@
     <title>Campus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
-    <div id="campus">
+<body class="body">
+    <div class="campus">
         <header class="header">
-            <nav>
-                <div>
-                    <a href="../index.html"><img src="../recursos/img/logo2.jpg" class="logo" alt="Logo"></a>
-                  <h1 class="university">University</h1>
-                </div>
-              </nav>
+            <div class="titulo">
+                <a href="../index.html"><img src="../recursos/img/logo.png" class="logo" alt="Logo"></a>
+                <h1 class="university">University</h1>
+              </div>
 
             <nav class="nav">
                 <ul>
@@ -42,16 +40,41 @@
             </section>
                
             <section class="actividades">
-                <h1>Actividades</h1> 
-                <p>Extensión</p>
-                <div class="extension">
-                    <img src="../recursos/img/extensión.jpg" alt="Especialización1">
-                </div>
-                <br>
-                <p>Deportivo</p>
-                <div class="deportivo">
-                    <img src="../recursos/img/deportivo5.jpg" alt="Maestría1">
-                </div>
+                <h1>Actividades</h1>
+                <!-- ACCORDION CON BOOTSTRAP -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Extensión
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">La extensión universitaria es una de las tres funciones sustantivas de nuestra Universidad junto a la investigación y la docencia. Tiene como objetivo promover el desarrollo cultural, y la transferencia del conocimiento y la cultura entre los distintos sectores sociales de la comunidad. Su misión es la de consolidar el vínculo entre la Universidad y la comunidad. La extensión universitaria tiene como protagonistas a los claustros de estudiantes, de no docentes y de docentes de la Universidad y a la comunidad en su conjunto.<img src="../recursos/img/extensión.jpg" alt="Extensión"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Deportivo
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Trabajamos para fomentar la actividad deportiva en los ámbitos universitarios, generando políticas educativas que contribuyan el desarrollo de un estudiante saludable y socialmente responsable durante su trayecto académico. Nuestra Universidad participa de competencias deportivas universitarias nacionales y federales, reuniendo a los estudiantes de instituciones de educación superior de todo el país con el fin de fomentar la ética, el juego limpio, la calidad de vida y la inclusión social a través del deporte.<img src="../recursos/img/deportivo5.jpg" alt="Deportivo"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Culturales
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Danza, teatro, coral universitaria, orquesta, aula de debate. Actividades de representación estudiantil por pertenencia a comisiones y delegación de estudiantes. Actividades de cooperación, participación en voluntariados, programas de acción tutorial y programas de movilidad internacional.<img src="../recursos/img/alumni3.jpg" alt="Cultural"></div>
+                      </div>
+                    </div>
+                  </div>
+
             </section>
 
             <section>
