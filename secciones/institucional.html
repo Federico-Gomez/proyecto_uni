@@ -26,53 +26,40 @@
             </nav>
         </header>
 
-        <br>
-
         <main class="main">
             <h1>Nuestra Universidad</h1>
-                <img src="../recursos/img/portada7.jpg" alt="La Universidad">
-                <p>"Somos una universidad argentina con vocación regional en Latinoamérica y nos proponemos cambiar la realidad social del entorno que nos rodea."</p>
-                <p>Estamos convencidos de que son las personas las que provocan el cambio en las organizaciones y estructuras sociales, respetando la centralidad del individuo y los principios éticos. Esto significa que a través de nuestra propia tarea universitaria -docencia, investigación y transferencia queremos formar excelentes profesionales con el gran compromiso de transformación social y, a la vez, con una enorme convicción por ser mejores personas como motor del cambio. Esto lo conseguiremos con la colaboración de toda la comunidad universitaria: alumnos, graduados, profesores, personal administrativo, junto a empresas y organizaciones sociales con las que nos relacionamos y todas las personas e instituciones que comparten la pasión por el cumplimiento de nuestra misión.</p>
-            </section>
+            <img src="../recursos/img/portada7.jpg" alt="La Universidad">
+             
+            <!-- GRID -->
+            <div class="container">
+                <div class="descriptivo">
+                    <p>"Somos una universidad argentina con vocación regional en Latinoamérica y nos proponemos cambiar la realidad social del entorno que nos rodea."</p>
+                    <p>Estamos convencidos de que son las personas las que provocan el cambio en las organizaciones y estructuras sociales, respetando la centralidad del individuo y los principios éticos. Esto significa que a través de nuestra propia tarea universitaria, docencia, investigación y transferencia queremos formar excelentes profesionales con el gran compromiso de transformación social y, a la vez, con una enorme convicción por ser mejores personas como motor del cambio. Esto lo conseguiremos con la colaboración de toda la comunidad universitaria: alumnos, graduados, profesores, personal administrativo, junto a empresas y organizaciones sociales con las que nos relacionamos y todas las personas e instituciones que comparten la pasión por el cumplimiento de nuestra misión.</p>
+                </div>
 
-            <br>
-        
-            <section class="link">
-                <div>
+                <div class="link">
                     <a href="./facultades.html">Carreras de Grado</a>
                     <a href="./posgrados.html">Posgrados</a>
                     <a href="./campus.html">Nuestro Campus</a>
                 </div>
-            </section>
-            
-            <section class="eventos">
-                <h1>Eventos</h1>
-                <br>
-                <div class="tipos-eventos">
-                    <p>Primer Semestre</p>
-                    <p>Segundo Semestre</p>
-                    <p>Talleres</p>
-                </div>
-            </section>
 
-            <section class="contacto">
-                <h1>Contactanos</h1>
+                <div class="contacto">
+                    <h1>Contactanos</h1>
                 <form class="form" action="?" method="get">
                     <label>Nombre</label>
                     <br>
                     <input type="text" placeholder="Nombre completo" name="nombre">
-                    <br><br>
+                    <br>
                     <label>Apellido</label>
                     <br>
                     <input type="text" placeholder="Apellido" name="apellido">
-                    <br><br>
+                    <br>
                     <label>Email (*)</label>
                     <br>
                     <input type="email" required placeholder="Email" name="email">
                     <br><br>
-                    <input type="submit">
-                    <br><br>
                     <label>Facultad</label>
+                    <br>
                     <select name="facultad">
                         <option value="ARQUITECTURA">Arquitectura</option>
                         <option value="CIENCIAS EXACTAS Y NATURALES">Exactas y Naturales</option>
@@ -80,19 +67,13 @@
                     </select>
                     <br><br>
                     <label>Escribinos tu consulta</label>
+                    <br>
                     <input type="text" placeholder="Consulta" name="consulta">
+                    <br><br>
+                    <input type="submit">
                 </form>
-            </section>
-
-            <section>
-                <h1 class="redes">Seguinos en redes</h1>
-                <div id="redes">
-                  <a href="#"><img src="../recursos/img/facebook1.jpg" alt="Facebook"></a>
-                  <a href="#"><img src="../recursos/img/instagram1.jpg" alt="Instagram"></a>
-                  <a href="#"><img src="../recursos/img/twitter1.jpg" alt="Twitter"></a>
                 </div>
-              </section>
-                
+            </div>
         </main>
 
         <footer class="footer">

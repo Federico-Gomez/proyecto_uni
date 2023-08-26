@@ -14,7 +14,7 @@
     flex-direction: column;
     align-content: center;
     margin: auto;
-    width: 1350px;
+    max-width: 1350px;
 }
 
 .logo{
@@ -51,7 +51,7 @@
     flex-wrap: wrap;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .nav ul li{
@@ -72,10 +72,6 @@
     padding: 20px;
 }
 
-#carouselExampleCaptions{
-    width: 1350px;
-}
-
 .carousel-inner h5{
     font-size: 60px;
     color:white;
@@ -86,15 +82,6 @@
     font-size: 34px;
     font-weight: 600;
     color: white;
-}
-
-.main .link a{
-    text-align: center;     
-    color: rgb(29, 29, 117);
-    font-family: sans-serif;
-    font-size: 28px;
-    padding-left: 20px;
-    padding-right: 20px; 
 }
 
 .video{
@@ -111,10 +98,10 @@
 .video .video-text{
     width: 480px;
     color: rgb(29, 29, 117);
-    padding: 10px 50px;
+    padding-right: 50px;
 }
 
-#redes{
+.redes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,7 +113,15 @@
     text-align: center;
 }
 
-#redes img{
+.redes div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 300px;
+}
+
+.redes div img{
     width: auto;
     height: 60%;
 }
@@ -144,7 +139,7 @@
 
 /* CAMPUS */
 .campus{
-    width: 1350px;
+    max-width: 1350px;
 }
 
 .campus .main img{
@@ -184,12 +179,6 @@
     text-align: center;
 }
 
-.campus .redes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .campus .redes img{
     width: auto;
     height: 60%;  
@@ -197,7 +186,7 @@
 
 /* FACULTADES */
 .facultades{
-    width: 1350px;
+    max-width: 1350px;
 }
 
 .facultades .main img{
@@ -240,65 +229,68 @@
     text-align: center;
 }
 
-.facultades #redes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.facultades #redes img{
+.facultades .redes img{
     width: auto;
     height: 60%;  
 }
 
 /* INSTITUCIONAL */
 .institucional{
-    width: 1350px;
+    max-width: 1350px;
 }
 
 .institucional .main img{
     width: 1350px; 
 }
 
-.institucional .main p{
-    font-weight: 300;
+.institucional .container {  display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 700px 100px;
+    gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-template-areas:
+      "descriptivo descriptivo contacto"
+      "link link contacto";
+  }
+  
+  .institucional .descriptivo { grid-area: descriptivo;
+    font-weight: 500;
     font-family: sans-serif;
-    font-size: 26px;
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.institucional .main .eventos h1{
-    text-align: center;     
+    font-size: 27px;
+    padding: 36px;
+    border-radius: 20px;
     color: rgb(29, 29, 117);
-    font-family: sans-serif;
-    font-size: 42px;
+}
+  
+.institucional .link { grid-area: link; 
+    text-align: center;
+    height: 60px;
+    display: block;
+    justify-content: space-around
 }
 
-.institucional .main .eventos .tipos-eventos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;    
+.institucional .link a{ grid-area: link; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; 
+    background-color:  rgb(0, 61, 165);     
+    color: white;
     font-family: sans-serif;
     font-size: 28px;
-    justify-content: space-between;
-    justify-content: space-around;
+    padding: 20px;
 }
 
-.institucional .form{
-    font-size: 20px;
+.institucional .container h1{
+    font-size: 50px;
+  }
+  
+.institucional .contacto { grid-area: contacto;
+    font-size: 30px; 
 }
 
 .institucional .redes{
     text-align: center;
-}
-
-.institucional .redes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .institucional .redes img{
@@ -308,7 +300,11 @@
 
 /* POSGRADOS */
 .posgrados{
-    width: 1350px;
+    max-width: 1350px;
+}
+
+.posgrados .superior{
+    max-width: 1350px;
 }
 
 .posgrados logo{
@@ -404,12 +400,9 @@
 
 .posgrados .redes{
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.posgrados #redes img{
+.posgrados .redes img{
     width: auto;
     height: 60%;  
 }
