@@ -17,9 +17,12 @@
     max-width: 1350px;
 }
 
+.inicio{
+    max-width: 1350px;
+}
+
 .logo{
-    width: 220px;
-    position: absolute;
+   position: absolute;
 }
 
 .header h1{
@@ -35,42 +38,52 @@
 }
 
 .header .titulo img{
-    height: 150px;
-    width: auto;
+    width: 115px;
 }
 
-.nav{
+.navbar ul{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;  
-}
-
-.nav ul{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
+    width: 1350px;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
-.nav ul li{
+.navbar ul li{
     padding: 20px;
     font-weight: 400;
     color: rgb(29, 29, 117);
     text-decoration: none;
 }
 
-.nav ul li a{
+.navbar ul li a{
     font-weight: 400;
     color: rgb(29, 29, 117);
     text-decoration: none;
+}
+
+.navbar ul form input{
+    font-size: 24px;
+    width: 180px;
+}
+
+.navbar ul form button{
+    font-size: 24px;
+    color: white;
+    background-color: rgb(0, 61, 165);
+    border-color: rgb(0, 61, 165);
 }
 
 .main h1{
     color: rgb(29, 29, 117);
     padding: 20px;
+    font-weight: 400;
+    font-size: 60px;
 }
+
 
 .carousel-inner h5{
     font-size: 60px;
@@ -121,6 +134,12 @@
     max-height: 300px;
 }
 
+.redes h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(29, 29, 117);
+}
+
 .redes div img{
     width: auto;
     height: 60%;
@@ -141,6 +160,15 @@
     .body{
         display: block;
     }
+    
+    .header .titulo img{
+        display: none;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+    }
+
     .video iframe{
         display: none;
     }
@@ -279,7 +307,7 @@
 
 .institucional .container {  display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 700px 100px;
+    grid-template-rows: 530px 100px;
     gap: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -291,9 +319,8 @@
   .institucional .descriptivo { grid-area: descriptivo;
     font-weight: 500;
     font-family: sans-serif;
-    font-size: 27px;
-    padding: 36px;
-    border-radius: 20px;
+    font-size: 24px;
+    padding: 20px;
     color: rgb(29, 29, 117);
 }
   
@@ -320,7 +347,7 @@
   }
   
 .institucional .contacto { grid-area: contacto;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .institucional .redes{
@@ -358,14 +385,6 @@
     max-width: 1350px;
 }
 
-.posgrados .main h1{
-    padding-top: 40px;
-}
-
-.posgrados .main .superior h1{
-    padding: 0;
-}
-
 .posgrados .main .reconocimiento{
     display: flex;
     flex-direction: row;
@@ -378,7 +397,7 @@
     font-family: sans-serif;
     font-size: 32px;
     padding: 19px;
-    background-color: black;
+    background-color: rgb(63, 63, 63);
     color: white;
     max-width: 720px;
     border-radius: 10px;
