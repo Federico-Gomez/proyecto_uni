@@ -169,9 +169,22 @@
         flex-direction: column;
     }
 
-    .video iframe{
+    .navbar ul form input{
         display: none;
     }
+
+    .navbar ul form button{
+        display: none;
+    }
+
+    .video{
+        flex-direction: column;
+    }
+
+    .video iframe{
+        width: 540px;
+    }
+
     .redes{
         display: none;
     }
