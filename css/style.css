@@ -335,7 +335,7 @@
 
 @media (max-width: 650px){
     .campus .main img{
-        max-width: 750px;
+        max-width: 480px;
         height: auto; 
     }
     .campus .actividades .accordion-body img{
@@ -551,7 +551,7 @@
         padding-bottom: 30px;
       }
       .institucional .main img{
-        max-width: 750px;
+        max-width: 480px;
         height: auto; 
     }
 }
