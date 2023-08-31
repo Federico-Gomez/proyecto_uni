@@ -206,6 +206,14 @@
         padding: 20px;
     }
 
+    h3{
+        padding: 20px;
+    }
+
+    h4{
+        padding: 20px;
+    }
+
     p{
         padding: 20px;
     }
@@ -710,6 +718,11 @@
 @media (max-width: 650px){
     .posgrados .main .reconocimiento .imagen{
         display: none;
+    }
+
+    .posgrados .main .reconocimiento p{
+        color: rgb(29, 29, 117);
+        background-color: white;
     }
 
     .posgrados .numeros1{
